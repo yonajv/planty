@@ -1,3 +1,4 @@
+/*
 Theme Name:   Astra Child
  Theme URI:    http://example.com/twenty-fifteen-child/
  Description:  Astra Child Theme
@@ -8,4 +9,225 @@ Theme Name:   Astra Child
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
- Text Domain:  astra-child
+ Text Domain:  astra-child 
+ */ 
+
+html {
+  font-size: 15px;
+}
+/* 1rem = 15px et quand je travail en responsive je refais 1 rem = XX px à mettre dans le media query */ 
+
+.site-logo-img img {
+  width: 235px;
+  height: 30px;
+ 
+}
+/* nav menu */ 
+
+#menu-item-26 .menu-link:hover{
+  font-weight: bold;
+}
+
+#menu-item-25 .menu-link {
+  background-color: #DC9F96;
+  color: white;
+}
+
+#menu-item-25 .menu-link:hover {
+  background-color: #C02E44;
+}
+
+ 
+.admin_button {
+  align-items: center;
+  display: flex;
+  padding: 0 1em;
+} 
+
+.admin_a {
+  color: black;
+}
+
+.admin_a:hover {
+  font-weight: bold;
+  color: black;
+}
+
+ 
+/* ------- nous rencontrer--------- */ 
+
+#container-text {
+  width: 600px;
+  height: 72px;
+}
+
+#form-img {
+  right: 100px;
+}
+
+     /*position home formulaire contact */ 
+/*
+#contact-container {
+  position: relative;
+}
+#form-img{
+position: absolute;
+left: 710px; 
+top: 350px;
+height: 135px;
+width: 147px;
+z-index: -1;
+} je l'ai fait avec Elementor, transform pour dépalcer l'image en bas à gauche*/
+
+/* ------- commander --------- */ 
+
+/* contact form */ 
+
+
+#quantity-container{
+  display: flex;
+  justify-content: space-around;
+}
+
+#data-form-info {
+  display: flex;
+  align-items: flex-start; /* Pour aligner les divs verticalement */
+}
+
+#form-firstpart, #form-secondpart {
+  flex: 1;
+}
+
+#horizontal-line {
+  border-top: 1px solid white; /* Ligne horizontale blanche */
+  margin: 20px 0; /* Marge en haut et en bas pour l'espace autour de la ligne */
+}
+
+#vertical-line {
+  width: 1px;
+  height: 350px;
+  background-color: white;
+  margin: 0 10px; 
+}
+
+#data-form-info span {
+  width: 383px;
+  height: 71px;
+  border: none;
+}
+
+#form-secondpart {
+  padding-left: 20px;
+  
+}
+
+#quantity-form-info h2,
+#data-form-info h2, 
+#data-form-info label {
+  color: white;
+}
+
+/* espace entre les images */ 
+.entry-content p {
+  padding-right: 20px;
+}
+
+/* espace entre image et quantité box */ 
+
+.product-container span {
+  margin-top: 20px ;
+  
+}
+     /* box pour la quantité */ 
+.product-container input[type=number] {
+  width: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  
+}
+
+.wpcf7 input.wpcf7-form-control:not([type=submit]) {
+  padding: 0px 0px;
+  width: 30%;
+  margin: auto;
+}
+
+.product-container span {
+  text-align: center;
+}
+
+#data-form-info input {
+  width: 100%;
+  padding: 35px 0;
+  border-radius: 7px;
+  border: none;
+
+}
+
+
+/* bouton commander */ 
+
+#button-submit {
+  text-align: center;
+}
+
+#button-submit input {
+  background-color: #DC9F96;
+  width: 198px;
+  height: 55px;
+  border-radius: 5px;
+  position: absolute;
+  left: 475px;
+  top: 800px;
+
+}
+
+
+/* ------- MEDIA QUERIES -------- */ 
+
+@media screen and (min-width: 1680px) {
+ 
+
+.site-logo-img img {
+  /*margin-left: 370px;*/
+  margin-left: 200px;
+  
+}
+
+  #home-leaves-left {
+    position: relative;
+    left: 80px;
+  }
+
+  
+  #home-leaves-right {
+    position: relative;
+    right: 80px;
+  }
+
+  
+#form-img {
+  right: 100px;
+}
+
+}
+
+@media screen and (min-width: 1440px) {
+  
+  .site-logo-img {
+  margin-left: 270px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  #form-img {
+    right: 65px;
+  }
+
+  .site-logo-img {
+    margin-left: 185px;
+    }
+}
