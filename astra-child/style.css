@@ -23,7 +23,22 @@ html {
  
 }
 /* nav menu */ 
-/*myona*/
+
+.ast-builder-menu .main-navigation>ul {
+  display: flex;
+}
+
+#menu-item-26 {
+  order: 1; 
+}
+
+#menu-item-25 {
+  order: 3;
+}
+
+.admin_button {
+  order: 2; 
+}
 
 #menu-item-26 .menu-link:hover{
   font-weight: bold;
@@ -63,22 +78,11 @@ html {
 }
 
 #form-img {
-  right: 100px;
+  right: 8px;
 }
 
-     /*position home formulaire contact */ 
-/*
-#contact-container {
-  position: relative;
-}
-#form-img{
-position: absolute;
-left: 710px; 
-top: 350px;
-height: 135px;
-width: 147px;
-z-index: -1;
-} je l'ai fait avec Elementor, transform pour dépalcer l'image en bas à gauche*/
+
+
 
 /* ------- commander --------- */ 
 
@@ -92,11 +96,8 @@ z-index: -1;
 
 #data-form-info {
   display: flex;
+  justify-content: space-between;
   align-items: flex-start; /* Pour aligner les divs verticalement */
-}
-
-#form-firstpart, #form-secondpart {
-  flex: 1;
 }
 
 #horizontal-line {
@@ -108,7 +109,7 @@ z-index: -1;
   width: 1px;
   height: 350px;
   background-color: white;
-  margin: 0 10px; 
+  margin: 0 15px; 
 }
 
 #data-form-info span {
@@ -117,10 +118,6 @@ z-index: -1;
   border: none;
 }
 
-#form-secondpart {
-  padding-left: 20px;
-  
-}
 
 #quantity-form-info h2,
 #data-form-info h2, 
@@ -185,6 +182,10 @@ z-index: -1;
 
 }
 
+#button-submit input:hover {
+  background-color: #C02E44;
+  color: white;
+}
 
 /* ------- MEDIA QUERIES -------- */ 
 
@@ -192,7 +193,7 @@ z-index: -1;
  
 
 .site-logo-img img {
-  /*margin-left: 370px;*/
+  
   margin-left: 200px;
   
 }
@@ -220,12 +221,16 @@ z-index: -1;
   .site-logo-img {
   margin-left: 270px;
   }
+
+  #form-img {
+    right: 8px;
+  }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   
   #form-img {
-    right: 65px;
+    right: 70px;
   }
 
   .site-logo-img {
